@@ -1,0 +1,79 @@
+[
+  {
+    "date": "2026-03-22",
+    "quizId": 162,
+    "title": "Quiz 162",
+    "image": "/quizzes/2026-03-22.png",
+    "hint": "2의배수 개수 + 4의배수 개수+ 8의배수 개수 + ...",
+    "answer": "97",
+    "youtubeUrl": "",
+    "publishAt": "2026-03-22T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-03-21",
+    "quizId": 161,
+    "title": "Quiz 161",
+    "image": "/quizzes/2026-03-21.png",
+    "hint": "왼쪽 두개를 보고 오른쪽 그림을 맞추는 문제.",
+    "answer": "흰색이 ㄱ자 모양으로 나오면 정답",
+    "youtubeUrl": "",
+    "publishAt": "2026-03-21T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-03-20",
+    "quizId": 160,
+    "title": "Quiz 160",
+    "image": "/quizzes/2026-03-20.png",
+    "hint": "앞글자: 분, 사, 지, 조, 삼",
+    "answer": "분배법칙, 사인법칙, 지수법칙, 조립제법, 삼단논법",
+    "youtubeUrl": "",
+    "publishAt": "2026-03-20T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-03-19",
+    "quizId": 159,
+    "title": "Quiz 159",
+    "image": "/quizzes/2026-03-19.png",
+    "hint": "로그",
+    "answer": "1",
+    "youtubeUrl": "",
+    "publishAt": "2026-03-19T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-03-18",
+    "quizId": 158,
+    "title": "Quiz 158",
+    "image": "/quizzes/2026-03-18.png",
+    "hint": "양변에 자연로그를 취한 뒤 미분해보세요.",
+    "answer": ">",
+    "youtubeUrl": "",
+    "publishAt": "2026-03-18T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-03-17",
+    "quizId": 157,
+    "title": "Quiz 157",
+    "image": "/quizzes/2026-03-17.png",
+    "hint": "C = 3413",
+    "answer": "B = 6084",
+    "youtubeUrl": "",
+    "publishAt": "2026-03-17T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-03-16",
+    "quizId": 156,
+    "title": "Quiz 156",
+    "image": "/quizzes/2026-03-16.png",
+    "hint": "세로 + -",
+    "answer": "5",
+    "youtubeUrl": "",
+    "publishAt": "2026-03-16T08:00:00+09:00",
+    "published": true
+  }
+]
