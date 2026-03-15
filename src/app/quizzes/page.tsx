@@ -1,6 +1,8 @@
 import Image from "next/image";
 import quizzes from "@/data/quizzes.json";
 
+export const dynamic = "force-dynamic";
+
 function isVisibleQuiz(quiz: {
   published?: boolean;
   publishAt?: string;
@@ -14,8 +16,10 @@ function isVisibleQuiz(quiz: {
   return Date.now() >= publishAtMs;
 }
 
-export default function QuizzesPage() {
-  const publishedQuizzes = quizzes.filter(isVisibleQuiz);
+export default function Home() {
+  const recentQuizzes = quizzes
+    .filter(isVisibleQuiz)
+    .slice(0, 6);
 
   return (
     <main className="min-h-screen bg-board text-white">
@@ -29,33 +33,45 @@ export default function QuizzesPage() {
           </div>
 
           <nav className="flex gap-6 text-sm text-white/80">
-            <a href="/" className="hover:text-white">
-              홈
-            </a>
-            <a href="/quizzes" className="hover:text-white">
-              퀴즈
-            </a>
-            <a href="/about" className="hover:text-white">
-              소개
-            </a>
+            <a href="/" className="hover:text-white">홈</a>
+            <a href="/quizzes" className="hover:text-white">퀴즈</a>
+            <a href="/about" className="hover:text-white">소개</a>
           </nav>
         </div>
       </header>
 
-      <section className="mx-auto max-w-6xl px-6 py-14">
-        <p className="chalk-accent mb-3 text-sm font-semibold tracking-[0.2em] uppercase">
-          QUIZ LIST
-        </p>
-        <h2 className="text-4xl font-bold md:text-5xl">두뇌스트레칭 퀴즈 모음</h2>
-        <p className="mt-5 max-w-3xl text-base leading-7 text-white/75">
-          최신 퀴즈부터 순서대로 모아볼 수 있는 페이지입니다.
-          문제를 클릭하면 힌트와 정답을 확인할 수 있는 상세 페이지로 이동합니다.
-        </p>
+      <section className="mx-auto max-w-6xl px-6 py-16">
+        <div className="max-w-3xl">
+          <p className="chalk-accent mb-4 text-sm font-semibold tracking-[0.2em] uppercase">
+            MATH QUIZ ARCHIVE
+          </p>
+          <h2 className="text-4xl font-bold leading-tight md:text-5xl">
+            매일 올라오는
+            <br />
+            수학 퀴즈를 모아보는 공간
+          </h2>
+          <p className="mt-6 max-w-2xl text-base leading-7 text-white/75 md:text-lg">
+            두뇌스트레칭 채널에 올라오는 퀴즈의 힌트와 정답을 확인하고,
+            새롭게 올라오는 문제들을 한눈에 모아볼 수 있는 홈페이지입니다.
+          </p>
+
+          <div className="mt-8 flex flex-wrap gap-4">
+            <a href="/quizzes" className="chalk-button">퀴즈 보러가기</a>
+            <a href="/about" className="chalk-button-secondary">사이트 소개</a>
+          </div>
+        </div>
       </section>
 
       <section className="mx-auto max-w-6xl px-6 pb-20">
+        <div className="mb-6 flex items-center justify-between">
+          <h3 className="text-2xl font-bold">최근 퀴즈</h3>
+          <a href="/quizzes" className="text-sm text-white/70 hover:text-white">
+            전체 보기
+          </a>
+        </div>
+
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {publishedQuizzes.map((quiz) => (
+          {recentQuizzes.map((quiz) => (
             <a
               key={quiz.date}
               href={`/quizzes/${quiz.date}`}
@@ -80,9 +96,9 @@ export default function QuizzesPage() {
 
               <div className="p-4">
                 <p className="text-sm text-white/60">{quiz.date}</p>
-                <h3 className="mt-2 text-xl font-bold">{quiz.title}</h3>
+                <h4 className="mt-2 text-xl font-bold">{quiz.title}</h4>
                 <p className="mt-2 text-sm leading-6 text-white/70">
-                  문제를 열어 힌트와 정답을 확인해보세요.
+                  칠판 감성의 수학 퀴즈 카드. 클릭해서 힌트와 정답을 확인하세요.
                 </p>
               </div>
             </a>

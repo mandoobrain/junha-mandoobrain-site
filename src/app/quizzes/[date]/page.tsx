@@ -1,6 +1,8 @@
 import Image from "next/image";
 import quizzes from "@/data/quizzes.json";
 
+export const dynamic = "force-dynamic";
+
 type QuizPageProps = {
   params: Promise<{
     date: string;
@@ -29,7 +31,9 @@ export default async function QuizDetailPage({ params }: QuizPageProps) {
       <main className="min-h-screen bg-board px-6 py-20 text-white">
         <div className="mx-auto max-w-3xl text-center">
           <h1 className="text-3xl font-bold">퀴즈를 찾을 수 없습니다</h1>
-          <p className="mt-4 text-white/70">아직 공개되지 않았거나 준비되지 않은 게시물입니다.</p>
+          <p className="mt-4 text-white/70">
+            아직 공개되지 않았거나 준비되지 않은 게시물입니다.
+          </p>
           <a href="/quizzes" className="chalk-button mt-8 inline-flex">
             퀴즈 목록으로 돌아가기
           </a>
@@ -50,15 +54,9 @@ export default async function QuizDetailPage({ params }: QuizPageProps) {
           </div>
 
           <nav className="flex gap-6 text-sm text-white/80">
-            <a href="/" className="hover:text-white">
-              홈
-            </a>
-            <a href="/quizzes" className="hover:text-white">
-              퀴즈
-            </a>
-            <a href="/about" className="hover:text-white">
-              소개
-            </a>
+            <a href="/" className="hover:text-white">홈</a>
+            <a href="/quizzes" className="hover:text-white">퀴즈</a>
+            <a href="/about" className="hover:text-white">소개</a>
           </nav>
         </div>
       </header>
@@ -93,12 +91,8 @@ export default async function QuizDetailPage({ params }: QuizPageProps) {
           </div>
 
           <div className="mt-6 flex flex-wrap gap-4">
-            <a href="/quizzes" className="chalk-button-secondary">
-              목록으로 돌아가기
-            </a>
-            <a href={quiz.youtubeUrl || "#"} className="chalk-button">
-              유튜브 쇼츠 보러가기
-            </a>
+            <a href="/quizzes" className="chalk-button-secondary">목록으로 돌아가기</a>
+            <a href={quiz.youtubeUrl || "#"} className="chalk-button">유튜브 쇼츠 보러가기</a>
           </div>
         </div>
 

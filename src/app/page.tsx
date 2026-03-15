@@ -1,6 +1,8 @@
 import Image from "next/image";
 import quizzes from "@/data/quizzes.json";
 
+export const dynamic = "force-dynamic";
+
 function isVisibleQuiz(quiz: {
   published?: boolean;
   publishAt?: string;
@@ -31,15 +33,9 @@ export default function Home() {
           </div>
 
           <nav className="flex gap-6 text-sm text-white/80">
-            <a href="/" className="hover:text-white">
-              홈
-            </a>
-            <a href="/quizzes" className="hover:text-white">
-              퀴즈
-            </a>
-            <a href="/about" className="hover:text-white">
-              소개
-            </a>
+            <a href="/" className="hover:text-white">홈</a>
+            <a href="/quizzes" className="hover:text-white">퀴즈</a>
+            <a href="/about" className="hover:text-white">소개</a>
           </nav>
         </div>
       </header>
@@ -60,12 +56,8 @@ export default function Home() {
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4">
-            <a href="/quizzes" className="chalk-button">
-              퀴즈 보러가기
-            </a>
-            <a href="/about" className="chalk-button-secondary">
-              사이트 소개
-            </a>
+            <a href="/quizzes" className="chalk-button">퀴즈 보러가기</a>
+            <a href="/about" className="chalk-button-secondary">사이트 소개</a>
           </div>
         </div>
       </section>
