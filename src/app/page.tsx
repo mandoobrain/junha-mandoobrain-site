@@ -1,11 +1,6 @@
 import Image from "next/image";
 import quizzes from "@/data/quizzes.json";
 
-function getNowKstMs() {
-  const now = new Date();
-  return now.getTime() + 9 * 60 * 60 * 1000 + now.getTimezoneOffset() * 60 * 1000;
-}
-
 function isVisibleQuiz(quiz: {
   published?: boolean;
   publishAt?: string;
@@ -16,7 +11,7 @@ function isVisibleQuiz(quiz: {
   const publishAtMs = Date.parse(quiz.publishAt);
   if (Number.isNaN(publishAtMs)) return false;
 
-  return getNowKstMs() >= publishAtMs;
+  return Date.now() >= publishAtMs;
 }
 
 export default function Home() {
