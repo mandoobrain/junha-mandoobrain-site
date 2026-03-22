@@ -16,62 +16,18 @@ function isVisibleQuiz(quiz: {
   return Date.now() >= publishAtMs;
 }
 
-export default function Home() {
-  const recentQuizzes = quizzes
-    .filter(isVisibleQuiz)
-    .slice(0, 6);
+export default function QuizzesPage() {
+  const publishedQuizzes = quizzes.filter(isVisibleQuiz);
 
   return (
     <main className="min-h-screen bg-board text-white">
-      <header className="border-b border-white/15">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
-          <div>
-            <h1 className="text-2xl font-bold tracking-wide">두뇌 스트레칭</h1>
-            <p className="mt-1 text-sm text-white/70">
-              수학 퀴즈, 힌트, 정답을 한 곳에서
-            </p>
-          </div>
-
-          <nav className="flex gap-6 text-sm text-white/80">
-            <a href="/" className="hover:text-white">홈</a>
-            <a href="/quizzes" className="hover:text-white">퀴즈</a>
-            <a href="/about" className="hover:text-white">소개</a>
-          </nav>
-        </div>
-      </header>
-
-      <section className="mx-auto max-w-6xl px-6 py-16">
-        <div className="max-w-3xl">
-          <p className="chalk-accent mb-4 text-sm font-semibold tracking-[0.2em] uppercase">
-            MATH QUIZ ARCHIVE
-          </p>
-          <h2 className="text-4xl font-bold leading-tight md:text-5xl">
-            매일 올라오는
-            <br />
-            수학 퀴즈를 모아보는 공간
-          </h2>
-          <p className="mt-6 max-w-2xl text-base leading-7 text-white/75 md:text-lg">
-            두뇌스트레칭 채널에 올라오는 퀴즈의 힌트와 정답을 확인하고,
-            새롭게 올라오는 문제들을 한눈에 모아볼 수 있는 홈페이지입니다.
-          </p>
-
-          <div className="mt-8 flex flex-wrap gap-4">
-            <a href="/quizzes" className="chalk-button">퀴즈 보러가기</a>
-            <a href="/about" className="chalk-button-secondary">사이트 소개</a>
-          </div>
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-6xl px-6 pb-20">
-        <div className="mb-6 flex items-center justify-between">
-          <h3 className="text-2xl font-bold">최근 퀴즈</h3>
-          <a href="/quizzes" className="text-sm text-white/70 hover:text-white">
-            전체 보기
-          </a>
+      <section className="mx-auto max-w-6xl px-6 py-12">
+        <div className="mb-6">
+          <h1 className="text-3xl font-bold">전체 퀴즈</h1>
         </div>
 
-        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {recentQuizzes.map((quiz) => (
+        <div className="grid grid-cols-3 gap-3 sm:grid-cols-3 lg:grid-cols-4">
+          {publishedQuizzes.map((quiz) => (
             <a
               key={quiz.date}
               href={`/quizzes/${quiz.date}`}
@@ -94,23 +50,16 @@ export default function Home() {
                 )}
               </div>
 
-              <div className="p-4">
-                <p className="text-sm text-white/60">{quiz.date}</p>
-                <h4 className="mt-2 text-xl font-bold">{quiz.title}</h4>
-                <p className="mt-2 text-sm leading-6 text-white/70">
-                  칠판 감성의 수학 퀴즈 카드. 클릭해서 힌트와 정답을 확인하세요.
-                </p>
+              <div className="p-3">
+                <p className="text-xs text-white/60">{quiz.date}</p>
+                <h4 className="mt-2 text-lg font-bold leading-tight">
+                  {quiz.title}
+                </h4>
               </div>
             </a>
           ))}
         </div>
       </section>
-
-      <footer className="border-t border-white/10">
-        <div className="mx-auto max-w-6xl px-6 py-6 text-sm text-white/55">
-          © 2026 두뇌 스트레칭. All Rights Reserved.
-        </div>
-      </footer>
     </main>
   );
 }

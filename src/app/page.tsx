@@ -19,7 +19,7 @@ function isVisibleQuiz(quiz: {
 export default function Home() {
   const recentQuizzes = quizzes
     .filter(isVisibleQuiz)
-    .slice(0, 6);
+    .slice(0, 9);
 
   return (
     <main className="min-h-screen bg-board text-white">
@@ -70,7 +70,7 @@ export default function Home() {
           </a>
         </div>
 
-        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-3 gap-3 sm:grid-cols-3 lg:grid-cols-4">
           {recentQuizzes.map((quiz) => (
             <a
               key={quiz.date}
@@ -97,9 +97,6 @@ export default function Home() {
               <div className="p-4">
                 <p className="text-sm text-white/60">{quiz.date}</p>
                 <h4 className="mt-2 text-xl font-bold">{quiz.title}</h4>
-                <p className="mt-2 text-sm leading-6 text-white/70">
-                  칠판 감성의 수학 퀴즈 카드. 클릭해서 힌트와 정답을 확인하세요.
-                </p>
               </div>
             </a>
           ))}
