@@ -22,42 +22,25 @@ export default function Home() {
     .slice(0, 9);
 
   return (
-    <main className="min-h-screen bg-board text-white">
-      <header className="border-b border-white/15">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
-          <div>
-            <h1 className="text-2xl font-bold tracking-wide">두뇌 스트레칭</h1>
-            <p className="mt-1 text-sm text-white/70">
-              수학 퀴즈, 힌트, 정답을 한 곳에서
-            </p>
-          </div>
-
-          <nav className="flex gap-6 text-sm text-white/80">
-            <a href="/" className="hover:text-white">홈</a>
-            <a href="/quizzes" className="hover:text-white">퀴즈</a>
-            <a href="/about" className="hover:text-white">소개</a>
-          </nav>
-        </div>
-      </header>
-
+    <main className="min-h-screen">
       <section className="mx-auto max-w-6xl px-6 py-16">
         <div className="max-w-3xl">
           <p className="chalk-accent mb-4 text-sm font-semibold tracking-[0.2em] uppercase">
             MATH QUIZ ARCHIVE
           </p>
           <h2 className="text-4xl font-bold leading-tight md:text-5xl">
-            매일 올라오는
+            수학 퀴즈, 개념정리, 계산기,
             <br />
-            수학 퀴즈를 모아보는 공간
+            두뇌 게임을 한 곳에서
           </h2>
           <p className="mt-6 max-w-2xl text-base leading-7 text-white/75 md:text-lg">
-            두뇌스트레칭 채널에 올라오는 퀴즈의 힌트와 정답을 확인하고,
-            새롭게 올라오는 문제들을 한눈에 모아볼 수 있는 홈페이지입니다.
+            매일 올라오는 두뇌스트레칭 퀴즈와 함께, 수학 개념정리, 다양한 계산기,
+            두뇌 게임까지 한 곳에서 이용할 수 있는 수학 콘텐츠 플랫폼입니다.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4">
-            <a href="/quizzes" className="chalk-button">퀴즈 보러가기</a>
-            <a href="/about" className="chalk-button-secondary">사이트 소개</a>
+            <a href="/quizzes" className="chalk-button">최근 퀴즈 보러가기</a>
+            <a href="/about" className="chalk-button-secondary">수학 개념정리 보러가기</a>
           </div>
         </div>
       </section>
@@ -100,6 +83,59 @@ export default function Home() {
               </div>
             </a>
           ))}
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-6 pb-20">
+        <div className="mb-6">
+          <h3 className="text-2xl font-bold">주요 메뉴</h3>
+          <p className="mt-2 text-white/70">
+            수학 개념정리, 계산기, 두뇌 게임을 한 곳에서 이용해보세요.
+          </p>
+        </div>
+
+        <div className="grid gap-5 md:grid-cols-3">
+          <a
+            href="/concepts"
+            className="rounded-2xl border border-white/10 bg-white/5 p-6 transition hover:bg-white/10"
+          >
+            <p className="chalk-accent text-sm font-semibold tracking-[0.2em] uppercase">
+              CONCEPTS
+            </p>
+            <h4 className="mt-3 text-2xl font-bold">수학 개념정리</h4>
+            <p className="mt-3 text-white/70">
+              공통수학1, 공통수학2, 대수, 미적분1의 개념과 공식, 증명을
+              정리하는 공간입니다.
+            </p>
+          </a>
+
+          <a
+            href="/calculators"
+            className="rounded-2xl border border-white/10 bg-white/5 p-6 transition hover:bg-white/10"
+          >
+            <p className="chalk-accent text-sm font-semibold tracking-[0.2em] uppercase">
+              CALCULATORS
+            </p>
+            <h4 className="mt-3 text-2xl font-bold">각종 계산기</h4>
+            <p className="mt-3 text-white/70">
+              소인수분해, 진수 변환, 소수 판별, 최대공약수와 최소공배수 계산기
+              등을 제공할 예정입니다.
+            </p>
+          </a>
+
+          <a
+            href="/games"
+            className="rounded-2xl border border-white/10 bg-white/5 p-6 transition hover:bg-white/10"
+          >
+            <p className="chalk-accent text-sm font-semibold tracking-[0.2em] uppercase">
+              BRAIN GAMES
+            </p>
+            <h4 className="mt-3 text-2xl font-bold">두뇌 게임</h4>
+            <p className="mt-3 text-white/70">
+              숫자야구, 소수 암기왕, 두뇌스트레칭 퀴즈 등 다양한 게임형 콘텐츠를
+              모아둘 공간입니다.
+            </p>
+          </a>
         </div>
       </section>
 

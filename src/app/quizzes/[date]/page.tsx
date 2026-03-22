@@ -43,24 +43,8 @@ export default async function QuizDetailPage({ params }: QuizPageProps) {
   }
 
   return (
-    <main className="min-h-screen bg-board text-white">
-      <header className="border-b border-white/15">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
-          <div>
-            <h1 className="text-2xl font-bold tracking-wide">두뇌 스트레칭</h1>
-            <p className="mt-1 text-sm text-white/70">
-              수학 퀴즈, 힌트, 정답을 한 곳에서
-            </p>
-          </div>
-
-          <nav className="flex gap-6 text-sm text-white/80">
-            <a href="/" className="hover:text-white">홈</a>
-            <a href="/quizzes" className="hover:text-white">퀴즈</a>
-            <a href="/about" className="hover:text-white">소개</a>
-          </nav>
-        </div>
-      </header>
-
+    <main className="min-h-screen">
+      
       <section className="mx-auto grid max-w-6xl gap-10 px-6 py-14 lg:grid-cols-[1.1fr_0.9fr]">
         <div>
           <p className="chalk-accent mb-3 text-sm font-semibold tracking-[0.2em] uppercase">

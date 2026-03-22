@@ -20,7 +20,7 @@ export default function QuizzesPage() {
   const publishedQuizzes = quizzes.filter(isVisibleQuiz);
 
   return (
-    <main className="min-h-screen bg-board text-white">
+    <main className="min-h-screen">
       <section className="mx-auto max-w-6xl px-6 py-12">
         <div className="mb-6">
           <h1 className="text-3xl font-bold">전체 퀴즈</h1>
