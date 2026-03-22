@@ -1,5 +1,82 @@
 [
   {
+    "date": "2026-03-29",
+    "quizId": 169,
+    "title": "Quiz 169",
+    "image": "/quizzes/2026-03-29.png",
+    "hint": "문제에 정답이 있다.",
+    "answer": "2가지",
+    "youtubeUrl": "https://www.youtube.com/shorts/ZZ-coksAiq8",
+    "publishAt": "2026-03-29T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-03-28",
+    "quizId": 168,
+    "title": "Quiz 168",
+    "image": "/quizzes/2026-03-28.png",
+    "hint": "2가 들어갑니다.",
+    "answer": "729",
+    "youtubeUrl": "https://www.youtube.com/shorts/SVnwGwOnPPA",
+    "publishAt": "2026-03-28T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-03-27",
+    "quizId": 167,
+    "title": "Quiz 167",
+    "image": "/quizzes/2026-03-27.png",
+    "hint": "양변에 자연로그를 취해 일반항을 만든 뒤 미분하여 증가 감소의 범위를 찾아보자.",
+    "answer": "오른쪽이 더 크다.",
+    "youtubeUrl": "https://www.youtube.com/shorts/EYYPEMtxFh0",
+    "publishAt": "2026-03-27T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-03-26",
+    "quizId": 166,
+    "title": "Quiz 166",
+    "image": "/quizzes/2026-03-26.png",
+    "hint": "영어 계이름, 오름차순",
+    "answer": "레미솔라",
+    "youtubeUrl": "https://www.youtube.com/shorts/68S40oe_Xwc",
+    "publishAt": "2026-03-26T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-03-25",
+    "quizId": 165,
+    "title": "Quiz 165",
+    "image": "/quizzes/2026-03-25.png",
+    "hint": "BO를 연장하여 원에 닿을 때 까지 연장선을 그리고 만나는 점을 D라 하자. 이후 A와 C를 연결한 뒤 원주각과 닮음을 활용하자.",
+    "answer": "81𝜋",
+    "youtubeUrl": "https://www.youtube.com/shorts/ISBqTF0o1Cs",
+    "publishAt": "2026-03-25T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-03-24",
+    "quizId": 164,
+    "title": "Quiz 164",
+    "image": "/quizzes/2026-03-24.png",
+    "hint": "DF를 연결하는 보조선을 그으면 풀립니다.",
+    "answer": "30도",
+    "youtubeUrl": "https://www.youtube.com/shorts/xr8G713o3k8",
+    "publishAt": "2026-03-24T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-03-23",
+    "quizId": 163,
+    "title": "Quiz 163",
+    "image": "/quizzes/2026-03-23.png",
+    "hint": "1. 정, 2. 작, 3. 원, 4. 여, 5. 원",
+    "answer": "1. 정비례와 반비례 2. 작도와 합동 3. 원과 부채꼴 4. 여러 가지 사각형 5. 원주각의 활용",
+    "youtubeUrl": "https://www.youtube.com/shorts/gBmpbqgKk1o",
+    "publishAt": "2026-03-23T08:00:00+09:00",
+    "published": true
+  },
+  {
     "date": "2026-03-22",
     "quizId": 162,
     "title": "Quiz 162",
