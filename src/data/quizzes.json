@@ -1,5 +1,82 @@
 [
   {
+    "date": "2026-04-05",
+    "quizId": 176,
+    "title": "Quiz 176",
+    "image": "/quizzes/2026-04-05.png",
+    "hint": "번역: 1~6이 쓰여있는 주사위를 던졌을 때 7이 나올 확률은?",
+    "answer": "0",
+    "youtubeUrl": "https://www.youtube.com/shorts/O23WbqpRwvg",
+    "publishAt": "2026-04-05T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-04-04",
+    "quizId": 175,
+    "title": "Quiz 175",
+    "image": "/quizzes/2026-04-04.png",
+    "hint": "2에서 2로 하나 8에서 5로 하나",
+    "answer": "3+6=9",
+    "youtubeUrl": "https://www.youtube.com/shorts/Kq678FrhKVQ",
+    "publishAt": "2026-04-04T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-04-03",
+    "quizId": 174,
+    "title": "Quiz 174",
+    "image": "/quizzes/2026-04-03.png",
+    "hint": "엘리베이터",
+    "answer": "8",
+    "youtubeUrl": "https://www.youtube.com/shorts/66f3kre33Ko",
+    "publishAt": "2026-04-03T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-04-02",
+    "quizId": 173,
+    "title": "Quiz 173",
+    "image": "/quizzes/2026-04-02.png",
+    "hint": "대우와 삼단논법",
+    "answer": "철수",
+    "youtubeUrl": "https://www.youtube.com/shorts/aD-0rtLKDlo",
+    "publishAt": "2026-04-02T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-04-01",
+    "quizId": 172,
+    "title": "Quiz 172",
+    "image": "/quizzes/2026-04-01.png",
+    "hint": "주사위의 마주보는 면의 합은 7",
+    "answer": "3",
+    "youtubeUrl": "https://www.youtube.com/shorts/uELns0cLK10",
+    "publishAt": "2026-04-01T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-03-31",
+    "quizId": 171,
+    "title": "Quiz 171",
+    "image": "/quizzes/2026-03-31.png",
+    "hint": "핸드폰을 기울여 보세요",
+    "answer": "16 또는 19",
+    "youtubeUrl": "https://www.youtube.com/shorts/g7vOaL_shko",
+    "publishAt": "2026-03-31T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-03-30",
+    "quizId": 170,
+    "title": "Quiz 170",
+    "image": "/quizzes/2026-03-30.png",
+    "hint": "키보드 자판을 이용해 영어를 한글로 바꾼 뒤 위에 표에 해당 한글을 그려보자.",
+    "answer": "7",
+    "youtubeUrl": "https://www.youtube.com/shorts/SBcaLbMW4-g",
+    "publishAt": "2026-03-30T08:00:00+09:00",
+    "published": true
+  },
+  {
     "date": "2026-03-29",
     "quizId": 169,
     "title": "Quiz 169",
