@@ -38,7 +38,7 @@ export default function CalculatorsPage() {
             </p>
             <h2 className="mt-3 text-2xl font-bold">진수 변환기</h2>
             <p className="mt-3 text-white/70">
-              n진법의 수를 다른 진법의 수로 변환하는 기능이 추가될 예정입니다.
+              n진법의 수를 다른 진법의 수로 변환하는 계산기 입니다.
             </p>
           </a>
 
@@ -51,7 +51,7 @@ export default function CalculatorsPage() {
             </p>
             <h2 className="mt-3 text-2xl font-bold">소수 판별기</h2>
             <p className="mt-3 text-white/70">
-              입력한 자연수가 소수인지 아닌지 판별하는 기능이 추가될 예정입니다.
+              입력한 자연수가 소수인지 아닌지 판별하는 계산기 입니다.
             </p>
           </a>
 
@@ -66,7 +66,7 @@ export default function CalculatorsPage() {
               최대공약수 최소공배수 계산기
             </h2>
             <p className="mt-3 text-white/70">
-              두 수의 최대공약수와 최소공배수를 구하는 기능이 추가될 예정입니다.
+              두 수의 최대공약수와 최소공배수를 구하는 계산기 입니다.
             </p>
           </a>
         </div>

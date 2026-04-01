@@ -19,7 +19,7 @@ function isVisibleQuiz(quiz: {
 export default function Home() {
   const recentQuizzes = quizzes
     .filter(isVisibleQuiz)
-    .slice(0, 9);
+    .slice(0, 3);
 
   return (
     <main className="min-h-screen">
@@ -119,7 +119,7 @@ export default function Home() {
             <h4 className="mt-3 text-2xl font-bold">각종 계산기</h4>
             <p className="mt-3 text-white/70">
               소인수분해, 진수 변환, 소수 판별, 최대공약수와 최소공배수 계산기
-              등을 제공할 예정입니다.
+              등을 제공합니다.
             </p>
           </a>
 
