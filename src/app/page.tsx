@@ -26,21 +26,21 @@ export default function Home() {
       <section className="mx-auto max-w-6xl px-6 py-16">
         <div className="max-w-3xl">
           <p className="chalk-accent mb-4 text-sm font-semibold tracking-[0.2em] uppercase">
-            MATH QUIZ ARCHIVE
+            MATH ARCHIVE
           </p>
-          <h2 className="text-4xl font-bold leading-tight md:text-5xl">
-            수학 퀴즈, 개념정리, 계산기,
-            <br />
-            두뇌 게임을 한 곳에서
+          <h2 className="text-4xl font-bold leading-tight break-keep md:text-5xl">
+            수학 퀴즈, 개념정리, 계산기, 두뇌 게임을 한 곳에서 즐겨보자!
           </h2>
-          <p className="mt-6 max-w-2xl text-base leading-7 text-white/75 md:text-lg">
-            매일 올라오는 두뇌스트레칭 퀴즈와 함께, 수학 개념정리, 다양한 계산기,
-            두뇌 게임까지 한 곳에서 이용할 수 있는 수학 콘텐츠 플랫폼입니다.
+          <p className="mt-6 max-w-2xl break-keep text-base leading-7 text-white/75 md:text-lg">
+            두뇌스트레칭 퀴즈와 수학 개념정리, 계산기, 두뇌 게임을
+            한 곳에서 이용할 수 있는 수학 콘텐츠 플랫폼입니다.
           </p>
 
-          <div className="mt-8 flex flex-wrap gap-4">
-            <a href="/quizzes" className="chalk-button">최근 퀴즈 보러가기</a>
-            <a href="/about" className="chalk-button-secondary">수학 개념정리 보러가기</a>
+          <div className="mt-8 grid grid-cols-2 gap-4 md:flex md:flex-wrap">
+           <a href="/quizzes" className="chalk-button">최근 퀴즈 보러가기</a>
+           <a href="/concepts" className="chalk-button-secondary">수학 개념정리</a>
+           <a href="/calculators" className="chalk-button-secondary">계산기 보러가기</a>
+           <a href="/games" className="chalk-button-secondary">두뇌 게임 보러가기</a>
           </div>
         </div>
       </section>
@@ -138,12 +138,7 @@ export default function Home() {
           </a>
         </div>
       </section>
-
-      <footer className="border-t border-white/10">
-        <div className="mx-auto max-w-6xl px-6 py-6 text-sm text-white/55">
-          © 2026 두뇌 스트레칭. All Rights Reserved.
-        </div>
-      </footer>
+     
     </main>
   );
 }

@@ -100,11 +100,7 @@ export default async function QuizDetailPage({ params }: QuizPageProps) {
         </div>
       </section>
 
-      <footer className="border-t border-white/10">
-        <div className="mx-auto max-w-6xl px-6 py-6 text-sm text-white/55">
-          © 2026 두뇌 스트레칭. All Rights Reserved.
-        </div>
-      </footer>
+      
     </main>
   );
 }

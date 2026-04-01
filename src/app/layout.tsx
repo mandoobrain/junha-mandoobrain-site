@@ -30,32 +30,45 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-board text-white`}
       >
         <header className="border-b border-white/15">
-          <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
-            <Link href="/" className="text-2xl font-bold tracking-wide">
-              두뇌 스트레칭
-            </Link>
+         <div className="mx-auto flex max-w-6xl flex-col gap-4 px-6 py-5 md:flex-row md:items-center md:justify-between">
+          <Link
+             href="/"
+             className="text-2xl font-bold tracking-wide whitespace-nowrap"
+          >
+             두뇌 스트레칭
+          </Link>
 
-            <nav className="flex gap-6 text-sm text-white/80">
-              <Link href="/" className="hover:text-white">
-                홈
-              </Link>
-              <Link href="/quizzes" className="hover:text-white">
-                퀴즈
-              </Link>
-              <Link href="/concepts" className="hover:text-white">
-                수학 개념정리
-              </Link>
-              <Link href="/calculators" className="hover:text-white">
-                각종 계산기
-              </Link>
-              <Link href="/games" className="hover:text-white">
-                두뇌 게임
-              </Link>
-            </nav>
-          </div>
+          <nav className="flex flex-wrap justify-start gap-x-4 gap-y-2 text-sm text-white/80 md:flex-nowrap md:justify-end md:gap-6">
+           <Link href="/" className="whitespace-nowrap hover:text-white">
+              홈
+           </Link>
+           <Link href="/quizzes" className="whitespace-nowrap hover:text-white">
+              퀴즈
+           </Link>
+           <Link href="/concepts" className="whitespace-nowrap hover:text-white">
+              수학 개념정리
+           </Link>
+           <Link href="/calculators" className="whitespace-nowrap hover:text-white">
+              각종 계산기
+           </Link>
+           <Link href="/games" className="whitespace-nowrap hover:text-white">
+              두뇌 게임
+           </Link>
+          </nav>
+         </div>
         </header>
 
         {children}
+
+        <footer className="border-t border-white/10">
+         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-6 text-sm text-white/55">
+          <p>© 2026 두뇌 스트레칭. All Rights Reserved.</p>
+          <a href="/privacy-policy" className="hover:text-white">
+              개인정보처리방침
+          </a>
+         </div>
+        </footer>
+
         <Analytics />
       </body>
     </html>
