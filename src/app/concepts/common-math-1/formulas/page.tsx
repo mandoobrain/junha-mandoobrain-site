@@ -1,21 +1,20 @@
-function Fraction({
-  top,
-  bottom,
+import katex from "katex";
+
+function Formula({
+  expr,
+  display = false,
 }: {
-  top: React.ReactNode;
-  bottom: React.ReactNode;
+  expr: string;
+  display?: boolean;
 }) {
-  return (
-    <span className="mx-1 inline-flex align-middle">
-      <span className="flex flex-col items-center leading-none">
-        <span className="border-b border-white px-1 pb-1 text-[0.9em]">
-          {top}
-        </span>
-        <span className="px-1 pt-1 text-[0.9em]">{bottom}</span>
-      </span>
-    </span>
-  );
+  const html = katex.renderToString(expr, {
+    throwOnError: false,
+    displayMode: display,
+  });
+
+  return <span dangerouslySetInnerHTML={{ __html: html }} />;
 }
+
 export default function CommonMath1FormulasPage() {
   return (
     <main className="min-h-screen">
@@ -37,6 +36,7 @@ export default function CommonMath1FormulasPage() {
         <div className="mt-6 rounded-2xl border border-white/10 bg-white/5 px-5 py-4 text-sm text-white/60">
           출처 · 자료 제작: 두뇌스트레칭
         </div>
+
         <div className="mt-6 grid grid-cols-1 gap-3 md:grid-cols-3">
           <a
             href="/concepts/common-math-1/formulas"
@@ -57,6 +57,7 @@ export default function CommonMath1FormulasPage() {
             암기용 테스트
           </a>
         </div>
+
         <div className="mt-4">
           <a
             href="/downloads/common-math-1/common-math-1-complete-final-v2.pdf"
@@ -66,51 +67,26 @@ export default function CommonMath1FormulasPage() {
             PDF 다운로드
           </a>
         </div>
+
         <div className="mt-12 space-y-12">
           <section>
             <h2 className="text-2xl font-bold">1. 곱셈공식</h2>
 
             <div className="mt-6 rounded-2xl border border-white/10 bg-white/5 p-6">
-              <div className="space-y-4 leading-8 text-white/85">
-                <p>
-                  1) (a+b)<sup>2</sup> = a<sup>2</sup> + 2ab + b<sup>2</sup>
-                </p>
-                <p>
-                  2) (a-b)<sup>2</sup> = a<sup>2</sup> - 2ab + b<sup>2</sup>
-                </p>
-                <p>
-                  3) (a+b)(a-b) = a<sup>2</sup> - b<sup>2</sup>
-                </p>
-                <p>
-                  4) (x+a)(x+b) = x<sup>2</sup> + (a+b)x + ab
-                </p>
-                <p>
-                  5) (ax+b)(cx+d) = acx<sup>2</sup> + (ad+bc)x + bd
-                </p>
-                <p>
-                  6) (x+a)(x+b)(x+c) = x<sup>3</sup> + (a+b+c)x<sup>2</sup> + (ab+bc+ca)x + abc
-                </p>
-                <p>
-                  7) (x-a)(x-b)(x-c) = x<sup>3</sup> - (a+b+c)x<sup>2</sup> + (ab+bc+ca)x - abc
-                </p>
-                <p>
-                  8) (a+b+c)<sup>2</sup> = a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup> + 2ab + 2bc + 2ca
-                </p>
-                <p>
-                  9) (ab+bc+ca)<sup>2</sup> = a<sup>2</sup>b<sup>2</sup> + b<sup>2</sup>c<sup>2</sup> + c<sup>2</sup>a<sup>2</sup> + 2abc(a+b+c)
-                </p>
-                <p>
-                  10) (a+b)<sup>3</sup> = a<sup>3</sup> + 3a<sup>2</sup>b + 3ab<sup>2</sup> + b<sup>3</sup>
-                </p>
-                <p>
-                  11) (a-b)<sup>3</sup> = a<sup>3</sup> - 3a<sup>2</sup>b + 3ab<sup>2</sup> - b<sup>3</sup>
-                </p>
-                <p>
-                  12) (a<sup>2</sup>+ab+b<sup>2</sup>)(a<sup>2</sup>-ab+b<sup>2</sup>) = a<sup>4</sup> + a<sup>2</sup>b<sup>2</sup> + b<sup>4</sup>
-                </p>
-                <p>
-                  13) (x<sup>2</sup>+x+1)(x<sup>2</sup>-x+1) = x<sup>4</sup> + x<sup>2</sup> + 1
-                </p>
+              <div className="space-y-6 text-white/85">
+                <div><Formula expr="1)\ (a+b)^2=a^2+2ab+b^2" display /></div>
+                <div><Formula expr="2)\ (a-b)^2=a^2-2ab+b^2" display /></div>
+                <div><Formula expr="3)\ (a+b)(a-b)=a^2-b^2" display /></div>
+                <div><Formula expr="4)\ (x+a)(x+b)=x^2+(a+b)x+ab" display /></div>
+                <div><Formula expr="5)\ (ax+b)(cx+d)=acx^2+(ad+bc)x+bd" display /></div>
+                <div><Formula expr="6)\ (x+a)(x+b)(x+c)=x^3+(a+b+c)x^2+(ab+bc+ca)x+abc" display /></div>
+                <div><Formula expr="7)\ (x-a)(x-b)(x-c)=x^3-(a+b+c)x^2+(ab+bc+ca)x-abc" display /></div>
+                <div><Formula expr="8)\ (a+b+c)^2=a^2+b^2+c^2+2ab+2bc+2ca" display /></div>
+                <div><Formula expr="9)\ (ab+bc+ca)^2=a^2b^2+b^2c^2+c^2a^2+2abc(a+b+c)" display /></div>
+                <div><Formula expr="10)\ (a+b)^3=a^3+3a^2b+3ab^2+b^3" display /></div>
+                <div><Formula expr="11)\ (a-b)^3=a^3-3a^2b+3ab^2-b^3" display /></div>
+                <div><Formula expr="12)\ (a^2+ab+b^2)(a^2-ab+b^2)=a^4+a^2b^2+b^4" display /></div>
+                <div><Formula expr="13)\ (x^2+x+1)(x^2-x+1)=x^4+x^2+1" display /></div>
               </div>
             </div>
           </section>
@@ -119,43 +95,19 @@ export default function CommonMath1FormulasPage() {
             <h2 className="text-2xl font-bold">2. 인수분해 공식</h2>
 
             <div className="mt-6 rounded-2xl border border-white/10 bg-white/5 p-6">
-              <div className="space-y-4 leading-8 text-white/85">
-                <p>
-                  1) a<sup>2</sup> + 2ab + b<sup>2</sup> = (a+b)<sup>2</sup>
-                </p>
-                <p>
-                  2) a<sup>2</sup> - 2ab + b<sup>2</sup> = (a-b)<sup>2</sup>
-                </p>
-                <p>
-                  3) x<sup>2</sup> + (a+b)x + ab = (x+a)(x+b)
-                </p>
-                <p>
-                  4) acx<sup>2</sup> + (ad+bc)x + bd = (ax+b)(cx+d)
-                </p>
-                <p>
-                  5) a<sup>2</sup> - b<sup>2</sup> = (a-b)(a+b)
-                </p>
-                <p>
-                  6) a<sup>3</sup> + b<sup>3</sup> = (a+b)(a<sup>2</sup>-ab+b<sup>2</sup>)
-                </p>
-                <p>
-                  7) a<sup>3</sup> - b<sup>3</sup> = (a-b)(a<sup>2</sup>+ab+b<sup>2</sup>)
-                </p>
-                <p>
-                  8) a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup> + 2ab + 2bc + 2ca = (a+b+c)<sup>2</sup>
-                </p>
-                <p>
-                  9) a<sup>4</sup> + a<sup>2</sup>b<sup>2</sup> + b<sup>4</sup> = (a<sup>2</sup>+ab+b<sup>2</sup>)(a<sup>2</sup>-ab+b<sup>2</sup>)
-                </p>
-                <p>
-                  10) x<sup>4</sup> + x<sup>2</sup> + 1 = (x<sup>2</sup>+x+1)(x<sup>2</sup>-x+1)
-                </p>
-                <p>
-                  11) a<sup>3</sup> + b<sup>3</sup> + c<sup>3</sup> - 3abc = (a+b+c)(a<sup>2</sup>+b<sup>2</sup>+c<sup>2</sup>-ab-bc-ca)
-                </p>
-                <p>
-                  12) a<sup>3</sup> + b<sup>3</sup> + c<sup>3</sup> - 3abc = <Fraction top="1" bottom="2" />(a+b+c){"{"}(a-b)<sup>2</sup> + (b-c)<sup>2</sup> + (c-a)<sup>2</sup>{"}"}
-                </p>
+              <div className="space-y-6 text-white/85">
+                <div><Formula expr="1)\ a^2+2ab+b^2=(a+b)^2" display /></div>
+                <div><Formula expr="2)\ a^2-2ab+b^2=(a-b)^2" display /></div>
+                <div><Formula expr="3)\ x^2+(a+b)x+ab=(x+a)(x+b)" display /></div>
+                <div><Formula expr="4)\ acx^2+(ad+bc)x+bd=(ax+b)(cx+d)" display /></div>
+                <div><Formula expr="5)\ a^2-b^2=(a-b)(a+b)" display /></div>
+                <div><Formula expr="6)\ a^3+b^3=(a+b)(a^2-ab+b^2)" display /></div>
+                <div><Formula expr="7)\ a^3-b^3=(a-b)(a^2+ab+b^2)" display /></div>
+                <div><Formula expr="8)\ a^2+b^2+c^2+2ab+2bc+2ca=(a+b+c)^2" display /></div>
+                <div><Formula expr="9)\ a^4+a^2b^2+b^4=(a^2+ab+b^2)(a^2-ab+b^2)" display /></div>
+                <div><Formula expr="10)\ x^4+x^2+1=(x^2+x+1)(x^2-x+1)" display /></div>
+                <div><Formula expr="11)\ a^3+b^3+c^3-3abc=(a+b+c)(a^2+b^2+c^2-ab-bc-ca)" display /></div>
+                <div><Formula expr="12)\ a^3+b^3+c^3-3abc=\frac{1}{2}(a+b+c)\left\{(a-b)^2+(b-c)^2+(c-a)^2\right\}" display /></div>
               </div>
             </div>
           </section>
@@ -164,52 +116,22 @@ export default function CommonMath1FormulasPage() {
             <h2 className="text-2xl font-bold">3. 변형공식</h2>
 
             <div className="mt-6 rounded-2xl border border-white/10 bg-white/5 p-6">
-              <div className="space-y-4 leading-8 text-white/85">
-                <p>
-                  1) (a+b)<sup>2</sup> = (a-b)<sup>2</sup> + 4ab
-                </p>
-                <p>
-                  2) (a-b)<sup>2</sup> = (a+b)<sup>2</sup> - 4ab
-                </p>
-                <p>
-                  3) a<sup>2</sup> + b<sup>2</sup> = (a+b)<sup>2</sup> - 2ab
-                </p>
-                <p>
-                  4) a<sup>2</sup> + b<sup>2</sup> = (a-b)<sup>2</sup> + 2ab
-                </p>
-                <p>
-                  5) a<sup>2</sup> + <Fraction top="1" bottom={<span>a<sup>2</sup></span>} /> = (a+<Fraction top="1" bottom="a" />)<sup>2</sup> - 2
-                </p>
-                <p>
-                  6) a<sup>2</sup> + <Fraction top="1" bottom={<span>a<sup>2</sup></span>} /> = (a-<Fraction top="1" bottom="a" />)<sup>2</sup> + 2
-                </p>
-                <p>
-                  7) (a+<Fraction top="1" bottom="a" />)<sup>2</sup> = (a-<Fraction top="1" bottom="a" />)<sup>2</sup> + 4
-                </p>
-                <p>
-                  8) a<sup>3</sup> + b<sup>3</sup> = (a+b)<sup>3</sup> - 3ab(a+b)
-                </p>
-                <p>
-                  9) a<sup>3</sup> - b<sup>3</sup> = (a-b)<sup>3</sup> + 3ab(a-b)
-                </p>
-                <p>
-                  10) a<sup>3</sup> + <Fraction top="1" bottom={<span>a<sup>3</sup></span>} /> = (a+<Fraction top="1" bottom="a" />)<sup>3</sup> - 3(a+<Fraction top="1" bottom="a" />)
-                </p>
-                <p>
-                  11) a<sup>3</sup> - <Fraction top="1" bottom={<span>a<sup>3</sup></span>} /> = (a-<Fraction top="1" bottom="a" />)<sup>3</sup> + 3(a-<Fraction top="1" bottom="a" />)
-                </p>
-                <p>
-                  12) a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup> + ab + bc + ca = <Fraction top="1" bottom="2" />{"{"}(a+b)<sup>2</sup> + (b+c)<sup>2</sup> + (c+a)<sup>2</sup>{"}"}
-                </p>
-                <p>
-                  13) a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup> - ab - bc - ca = <Fraction top="1" bottom="2" />{"{"}(a-b)<sup>2</sup> + (b-c)<sup>2</sup> + (c-a)<sup>2</sup>{"}"}
-                </p>
-                <p>
-                  14) a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup> = (a+b+c)<sup>2</sup> - 2(ab+bc+ca)
-                </p>
-                <p>
-                  15) a<sup>3</sup> + b<sup>3</sup> + c<sup>3</sup> = (a+b+c)(a<sup>2</sup>+b<sup>2</sup>+c<sup>2</sup>-ab-bc-ca) + 3abc
-                </p>
+              <div className="space-y-6 text-white/85">
+                <div><Formula expr="1)\ (a+b)^2=(a-b)^2+4ab" display /></div>
+                <div><Formula expr="2)\ (a-b)^2=(a+b)^2-4ab" display /></div>
+                <div><Formula expr="3)\ a^2+b^2=(a+b)^2-2ab" display /></div>
+                <div><Formula expr="4)\ a^2+b^2=(a-b)^2+2ab" display /></div>
+                <div><Formula expr="5)\ a^2+\frac{1}{a^2}=\left(a+\frac{1}{a}\right)^2-2" display /></div>
+                <div><Formula expr="6)\ a^2+\frac{1}{a^2}=\left(a-\frac{1}{a}\right)^2+2" display /></div>
+                <div><Formula expr="7)\ \left(a+\frac{1}{a}\right)^2=\left(a-\frac{1}{a}\right)^2+4" display /></div>
+                <div><Formula expr="8)\ a^3+b^3=(a+b)^3-3ab(a+b)" display /></div>
+                <div><Formula expr="9)\ a^3-b^3=(a-b)^3+3ab(a-b)" display /></div>
+                <div><Formula expr="10)\ a^3+\frac{1}{a^3}=\left(a+\frac{1}{a}\right)^3-3\left(a+\frac{1}{a}\right)" display /></div>
+                <div><Formula expr="11)\ a^3-\frac{1}{a^3}=\left(a-\frac{1}{a}\right)^3+3\left(a-\frac{1}{a}\right)" display /></div>
+                <div><Formula expr="12)\ a^2+b^2+c^2+ab+bc+ca=\frac{1}{2}\left\{(a+b)^2+(b+c)^2+(c+a)^2\right\}" display /></div>
+                <div><Formula expr="13)\ a^2+b^2+c^2-ab-bc-ca=\frac{1}{2}\left\{(a-b)^2+(b-c)^2+(c-a)^2\right\}" display /></div>
+                <div><Formula expr="14)\ a^2+b^2+c^2=(a+b+c)^2-2(ab+bc+ca)" display /></div>
+                <div><Formula expr="15)\ a^3+b^3+c^3=(a+b+c)(a^2+b^2+c^2-ab-bc-ca)+3abc" display /></div>
               </div>
             </div>
           </section>
@@ -218,46 +140,20 @@ export default function CommonMath1FormulasPage() {
             <h2 className="text-2xl font-bold">4. 추가로 알아두면 좋은 공식</h2>
 
             <div className="mt-6 rounded-2xl border border-white/10 bg-white/5 p-6">
-              <div className="space-y-4 leading-8 text-white/85">
-                <p>
-                  1) x<sup>5</sup> + y<sup>5</sup> = (x<sup>3</sup>+y<sup>3</sup>)(x<sup>2</sup>+y<sup>2</sup>) - x<sup>2</sup>y<sup>2</sup>(x+y)
-                </p>
-                <p>
-                  2) x<sup>7</sup> + y<sup>7</sup> = (x<sup>3</sup>+y<sup>3</sup>)(x<sup>4</sup>+y<sup>4</sup>) - x<sup>3</sup>y<sup>3</sup>(x+y)
-                </p>
-                <p>
-                  3) x<sup>6</sup> + y<sup>6</sup> = (x<sup>3</sup>+y<sup>3</sup>)<sup>2</sup> - 2(xy)<sup>3</sup>
-                </p>
-                <p>
-                  4) x<sup>6</sup> + y<sup>6</sup> = (x<sup>2</sup>+y<sup>2</sup>)<sup>3</sup> - 3(xy)<sup>2</sup>(x<sup>2</sup>+y<sup>2</sup>)
-                </p>
-                <p>
-                  5) a<sup>4</sup> - b<sup>4</sup> = (a-b)(a<sup>3</sup>+a<sup>2</sup>b+ab<sup>2</sup>+b<sup>3</sup>)
-                </p>
-                <p>
-                  6) a<sup>5</sup> - b<sup>5</sup> = (a-b)(a<sup>4</sup>+a<sup>3</sup>b+a<sup>2</sup>b<sup>2</sup>+ab<sup>3</sup>+b<sup>4</sup>)
-                </p>
-                <p>
-                  7) a<sup>n</sup> - b<sup>n</sup> = (a-b)(a<sup>n-1</sup>+a<sup>n-2</sup>b+...+ab<sup>n-2</sup>+b<sup>n-1</sup>)
-                </p>
-                <p>
-                  8) x<sup>4</sup> - 1 = (x-1)(x<sup>3</sup>+x<sup>2</sup>+x+1)
-                </p>
-                <p>
-                  9) x<sup>5</sup> - 1 = (x-1)(x<sup>4</sup>+x<sup>3</sup>+x<sup>2</sup>+x+1)
-                </p>
-                <p>
-                  10) x<sup>n</sup> - 1 = (x-1)(x<sup>n-1</sup>+x<sup>n-2</sup>+...+x+1)
-                </p>
-                <p>
-                  11) (a+b+c+d)<sup>2</sup> = a<sup>2</sup>+b<sup>2</sup>+c<sup>2</sup>+d<sup>2</sup> + 2ab+2ac+2ad+2bc+2bd+2cd
-                </p>
-                <p>
-                  12) (a+b+c+d+e)<sup>2</sup> = a<sup>2</sup>+b<sup>2</sup>+c<sup>2</sup>+d<sup>2</sup>+e<sup>2</sup> + 2ab+2ac+2ad+2ae+2bc+2bd+2be+2cd+2ce+2de
-                </p>
-                <p>
-                  13) (a+b+c+d+e+...+z)<sup>2</sup> = a<sup>2</sup>+b<sup>2</sup>+c<sup>2</sup>+d<sup>2</sup>+e<sup>2</sup>+...+z<sup>2</sup> + 2(ab+ac+ad+...+yz)
-                </p>
+              <div className="space-y-6 text-white/85">
+                <div><Formula expr="1)\ x^5+y^5=(x^3+y^3)(x^2+y^2)-x^2y^2(x+y)" display /></div>
+                <div><Formula expr="2)\ x^7+y^7=(x^3+y^3)(x^4+y^4)-x^3y^3(x+y)" display /></div>
+                <div><Formula expr="3)\ x^6+y^6=(x^3+y^3)^2-2(xy)^3" display /></div>
+                <div><Formula expr="4)\ x^6+y^6=(x^2+y^2)^3-3(xy)^2(x^2+y^2)" display /></div>
+                <div><Formula expr="5)\ a^4-b^4=(a-b)(a^3+a^2b+ab^2+b^3)" display /></div>
+                <div><Formula expr="6)\ a^5-b^5=(a-b)(a^4+a^3b+a^2b^2+ab^3+b^4)" display /></div>
+                <div><Formula expr="7)\ a^n-b^n=(a-b)(a^{n-1}+a^{n-2}b+\cdots+ab^{n-2}+b^{n-1})" display /></div>
+                <div><Formula expr="8)\ x^4-1=(x-1)(x^3+x^2+x+1)" display /></div>
+                <div><Formula expr="9)\ x^5-1=(x-1)(x^4+x^3+x^2+x+1)" display /></div>
+                <div><Formula expr="10)\ x^n-1=(x-1)(x^{n-1}+x^{n-2}+\cdots+x+1)" display /></div>
+                <div><Formula expr="11)\ (a+b+c+d)^2=a^2+b^2+c^2+d^2+2ab+2ac+2ad+2bc+2bd+2cd" display /></div>
+                <div><Formula expr="12)\ (a+b+c+d+e)^2=a^2+b^2+c^2+d^2+e^2+2ab+2ac+2ad+2ae+2bc+2bd+2be+2cd+2ce+2de" display /></div>
+                <div><Formula expr="13)\ (a+b+c+d+e+\cdots+z)^2=a^2+b^2+c^2+d^2+e^2+\cdots+z^2+2(ab+ac+ad+\cdots+yz)" display /></div>
               </div>
             </div>
           </section>
