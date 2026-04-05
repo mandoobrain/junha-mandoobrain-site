@@ -12,6 +12,17 @@ function Formula({
     displayMode: display,
   });
 
+  if (display) {
+    return (
+      <div className="w-full overflow-x-auto overflow-y-hidden py-1">
+        <div
+          className="w-max min-w-full text-left [&_.katex-display]:m-0 [&_.katex-display]:text-left"
+          dangerouslySetInnerHTML={{ __html: html }}
+        />
+      </div>
+    );
+  }
+
   return <span dangerouslySetInnerHTML={{ __html: html }} />;
 }
 
