@@ -61,11 +61,17 @@ export default function RootLayout({
         {children}
 
         <footer className="border-t border-white/10">
-         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-6 text-sm text-white/55">
+         <div className="mx-auto flex max-w-6xl flex-col gap-3 px-6 py-6 text-sm text-white/55 md:flex-row md:items-center md:justify-between">
           <p>© 2026 두뇌 스트레칭. All Rights Reserved.</p>
-          <a href="/privacy-policy" className="hover:text-white">
-              개인정보처리방침
-          </a>
+
+          <div className="flex flex-wrap gap-4">
+           <a href="/privacy-policy" className="hover:text-white">
+               개인정보처리방침
+           </a>
+           <a href="/contact" className="hover:text-white">
+               문의
+           </a>
+          </div>
          </div>
         </footer>
 
