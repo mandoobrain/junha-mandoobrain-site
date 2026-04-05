@@ -1,5 +1,82 @@
 [
   {
+    "date": "2026-04-12",
+    "quizId": 183,
+    "title": "Quiz 183",
+    "image": "/quizzes/2026-04-12.png",
+    "hint": "처음부터 학부모나 문제집을 먼저 데려가면 안 된다. 누가 어디에 남게 되는지 잘 따져 보자.",
+    "answer": "학생 → 혼자 복귀 → 학부모 → 학생 데리고 복귀 → 문제집 → 혼자 복귀 → 학생",
+    "youtubeUrl": "https://www.youtube.com/shorts/rvDTiuWg7yk",
+    "publishAt": "2026-04-12T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-04-11",
+    "quizId": 182,
+    "title": "Quiz 182",
+    "image": "/quizzes/2026-04-11.png",
+    "hint": "각 자리 숫자의 합",
+    "answer": "8634",
+    "youtubeUrl": "https://www.youtube.com/shorts/r1qJ3_V5wO8",
+    "publishAt": "2026-04-11T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-04-10",
+    "quizId": 181,
+    "title": "Quiz 181",
+    "image": "/quizzes/2026-04-10.png",
+    "hint": "9와 6은 돌려서 사용할 수 있다.",
+    "answer": "96+9+6 or 99+6+6",
+    "youtubeUrl": "https://www.youtube.com/shorts/3cYk1D3CKkQ",
+    "publishAt": "2026-04-10T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-04-09",
+    "quizId": 180,
+    "title": "Quiz 180",
+    "image": "/quizzes/2026-04-09.png",
+    "hint": "소인수분해",
+    "answer": "25729",
+    "youtubeUrl": "https://www.youtube.com/shorts/qSwFjL7LUDg",
+    "publishAt": "2026-04-09T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-04-08",
+    "quizId": 179,
+    "title": "Quiz 179",
+    "image": "/quizzes/2026-04-08.png",
+    "hint": "최대공약수, 최소공배수",
+    "answer": "1060",
+    "youtubeUrl": "https://www.youtube.com/shorts/KvBU-mXFqWc",
+    "publishAt": "2026-04-08T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-04-07",
+    "quizId": 178,
+    "title": "Quiz 178",
+    "image": "/quizzes/2026-04-07.png",
+    "hint": "2진법",
+    "answer": "15",
+    "youtubeUrl": "https://www.youtube.com/shorts/8uVA50in-Ng",
+    "publishAt": "2026-04-07T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-04-06",
+    "quizId": 177,
+    "title": "Quiz 177",
+    "image": "/quizzes/2026-04-06.png",
+    "hint": "2x2 박스를 생각해보자!",
+    "answer": "73",
+    "youtubeUrl": "https://www.youtube.com/shorts/Sqf5pPOOnsM",
+    "publishAt": "2026-04-06T08:00:00+09:00",
+    "published": true
+  },
+  {
     "date": "2026-04-05",
     "quizId": 176,
     "title": "Quiz 176",
