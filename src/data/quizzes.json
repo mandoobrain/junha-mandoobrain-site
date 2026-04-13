@@ -1,5 +1,82 @@
 [
   {
+    "date": "2026-04-19",
+    "quizId": 190,
+    "title": "Quiz 190",
+    "image": "/quizzes/2026-04-19.png",
+    "hint": "3에서 하나 8에서 하나를 이동시킨다",
+    "answer": "3에 성냥 1개를 1호 옮겨 7로 만들고, 8의 성냥 1개를 3으로 옮겨 7 + 2 = 9",
+    "youtubeUrl": "https://www.youtube.com/shorts/KyyTVXhp-6s",
+    "publishAt": "2026-04-19T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-04-18",
+    "quizId": 189,
+    "title": "Quiz 189",
+    "image": "/quizzes/2026-04-18.png",
+    "hint": "7리터를 꽉 채운뒤 3리터 물통에 부으면서 시작해야한다.",
+    "answer": "7 채우기 → 3으로 붓기 → 3 비우기를 3번 반복한 뒤, 7 채우기 → 3으로 붓기를 한 번 더 하면 된다.",
+    "youtubeUrl": "https://www.youtube.com/shorts/HCyB3FJpppM",
+    "publishAt": "2026-04-18T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-04-17",
+    "quizId": 188,
+    "title": "Quiz 188",
+    "image": "/quizzes/2026-04-17.png",
+    "hint": "둘레 = 반지름x2x파이",
+    "answer": "같다",
+    "youtubeUrl": "https://www.youtube.com/shorts/fZnhD3Vyoh0",
+    "publishAt": "2026-04-17T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-04-16",
+    "quizId": 187,
+    "title": "Quiz 187",
+    "image": "/quizzes/2026-04-16.png",
+    "hint": "꼭 가로, 세로, 대각선의 합이 얼마인지 알 필요 없다.",
+    "answer": "A=6, C=2",
+    "youtubeUrl": "https://www.youtube.com/shorts/MkYox7GOTIA",
+    "publishAt": "2026-04-16T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-04-15",
+    "quizId": 186,
+    "title": "Quiz 186",
+    "image": "/quizzes/2026-04-15.png",
+    "hint": "ABCD, A+C = B+D",
+    "answer": "1357",
+    "youtubeUrl": "https://www.youtube.com/shorts/-dhuxYdXcRM",
+    "publishAt": "2026-04-15T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-04-14",
+    "quizId": 185,
+    "title": "Quiz 185",
+    "image": "/quizzes/2026-04-14.png",
+    "hint": "12진법 (홈페이지의 진법 변환기를 사용해보세요)",
+    "answer": "26",
+    "youtubeUrl": "https://www.youtube.com/shorts/Rb5ZU7NpDpo",
+    "publishAt": "2026-04-14T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-04-13",
+    "quizId": 184,
+    "title": "Quiz 184",
+    "image": "/quizzes/2026-04-13.png",
+    "hint": "숫자의 차이",
+    "answer": "8의 제곱, 즉 64",
+    "youtubeUrl": "https://www.youtube.com/shorts/hSG90d-6Isg",
+    "publishAt": "2026-04-13T08:00:00+09:00",
+    "published": true
+  },
+  {
     "date": "2026-04-12",
     "quizId": 183,
     "title": "Quiz 183",
