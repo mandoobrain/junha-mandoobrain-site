@@ -1,5 +1,6 @@
 import Image from "next/image";
 import quizzes from "@/data/quizzes.json";
+import RevealBox from "@/components/RevealBox";
 
 export const dynamic = "force-dynamic";
 
@@ -44,7 +45,7 @@ export default async function QuizDetailPage({ params }: QuizPageProps) {
 
   return (
     <main className="min-h-screen">
-      
+
       <section className="mx-auto grid max-w-6xl gap-10 px-6 py-14 lg:grid-cols-[1.1fr_0.9fr]">
         <div>
           <p className="chalk-accent mb-3 text-sm font-semibold tracking-[0.2em] uppercase">
@@ -81,26 +82,24 @@ export default async function QuizDetailPage({ params }: QuizPageProps) {
         </div>
 
         <div className="space-y-6">
-          <div className="rounded-[24px] border border-white/10 bg-black/20 p-6 shadow-[0_10px_30px_rgba(0,0,0,0.22)]">
-            <h3 className="text-xl font-bold">힌트</h3>
-            <p className="mt-4 text-base leading-7 text-white/80">{quiz.hint}</p>
-          </div>
+          <RevealBox title="힌트" buttonText="힌트 보기">
+            {quiz.hint}
+          </RevealBox>
 
-          <div className="rounded-[24px] border border-white/10 bg-black/20 p-6 shadow-[0_10px_30px_rgba(0,0,0,0.22)]">
-            <h3 className="text-xl font-bold">정답</h3>
-            <p className="mt-4 text-2xl font-bold chalk-accent">{quiz.answer}</p>
-          </div>
+          <RevealBox title="정답" buttonText="정답 보기" accent>
+            {quiz.answer}
+          </RevealBox>
 
           <div className="rounded-[24px] border border-dashed border-white/15 bg-white/5 p-6">
             <h3 className="text-lg font-bold text-white/85">광고 영역</h3>
             <p className="mt-3 text-sm leading-6 text-white/60">
-              추후 Google 광고 또는 힌트/정답 열람용 광고 영역이 들어갈 자리입니다.
+              추후 Google 광고 또는 힌트/정답 열람 전 광고 영역이 들어갈 자리입니다.
             </p>
           </div>
         </div>
       </section>
 
-      
+
     </main>
   );
 }
