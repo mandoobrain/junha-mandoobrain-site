@@ -28,15 +28,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-board text-white`}
-      >
+      <head>
         <Script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4820515873781975"
           crossOrigin="anonymous"
           strategy="afterInteractive"
         />
+      </head>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-board text-white`}
+      >
+
         <header className="border-b border-white/15">
           <div className="mx-auto flex max-w-6xl flex-col gap-4 px-6 py-5 md:flex-row md:items-center md:justify-between">
             <Link
