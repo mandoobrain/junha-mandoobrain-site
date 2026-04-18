@@ -137,4 +137,51 @@
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
+    <url>
+    <loc>https://www.mandoobrain.com/concepts/common-math-1/complex-nth-roots</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.mandoobrain.com/concepts/common-math-1/cubic-complex-roots</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.mandoobrain.com/concepts/common-math-2/four-set-venn-diagram</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.mandoobrain.com/concepts/common-math-2/inverse-function-intersection</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.mandoobrain.com/concepts/algebra/exponential-codomain</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.mandoobrain.com/concepts/algebra/common-log-integer-part</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.mandoobrain.com/concepts/calculus-1/closed-interval-continuity</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.mandoobrain.com/concepts/calculus-1/epsilon-delta-limit</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
