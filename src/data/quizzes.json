@@ -1,5 +1,82 @@
 [
   {
+    "date": "2026-04-26",
+    "quizId": 197,
+    "title": "Quiz 197",
+    "image": "/quizzes/2026-04-26.png",
+    "hint": "양의 제곱근: 2",
+    "answer": "4",
+    "youtubeUrl": "https://www.youtube.com/shorts/rKvxj8qahKo",
+    "publishAt": "2026-04-26T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-04-25",
+    "quizId": 196,
+    "title": "Quiz 196",
+    "image": "/quizzes/2026-04-25.png",
+    "hint": "제곱수",
+    "answer": "5",
+    "youtubeUrl": "https://www.youtube.com/shorts/sO0RIbDQ_zc",
+    "publishAt": "2026-04-25T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-04-24",
+    "quizId": 195,
+    "title": "Quiz 195",
+    "image": "/quizzes/2026-04-24.png",
+    "hint": "11이 숨어있습니다.",
+    "answer": "17",
+    "youtubeUrl": "https://www.youtube.com/shorts/g8tsiuX5uCI",
+    "publishAt": "2026-04-24T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-04-23",
+    "quizId": 194,
+    "title": "Quiz 194",
+    "image": "/quizzes/2026-04-23.png",
+    "hint": "절댓값을 1로 생각하자",
+    "answer": "39",
+    "youtubeUrl": "https://www.youtube.com/shorts/v6iv7ycx6dw",
+    "publishAt": "2026-04-23T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-04-22",
+    "quizId": 193,
+    "title": "Quiz 193",
+    "image": "/quizzes/2026-04-22.png",
+    "hint": "나눗셈",
+    "answer": "25",
+    "youtubeUrl": "https://www.youtube.com/shorts/H9F2oFIkNCc",
+    "publishAt": "2026-04-22T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-04-21",
+    "quizId": 192,
+    "title": "Quiz 192",
+    "image": "/quizzes/2026-04-21.png",
+    "hint": "양변에 7을 곱하여 생각해보자",
+    "answer": "1/6",
+    "youtubeUrl": "https://www.youtube.com/shorts/ft80gCgZt2M",
+    "publishAt": "2026-04-21T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-04-20",
+    "quizId": 191,
+    "title": "Quiz 191",
+    "image": "/quizzes/2026-04-20.png",
+    "hint": "순환소수, 약수의 개수",
+    "answer": "8",
+    "youtubeUrl": "https://www.youtube.com/shorts/tFw6zBNMulE",
+    "publishAt": "2026-04-20T08:00:00+09:00",
+    "published": true
+  },
+  {
     "date": "2026-04-19",
     "quizId": 190,
     "title": "Quiz 190",
