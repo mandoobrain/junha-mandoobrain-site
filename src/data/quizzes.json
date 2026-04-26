@@ -1,5 +1,82 @@
 [
   {
+    "date": "2026-05-03",
+    "quizId": 204,
+    "title": "Quiz 204",
+    "image": "/quizzes/2026-05-03.png",
+    "hint": "숫자를 영어로 바꾸고 알파벳 순서를 확인해보자",
+    "answer": "R",
+    "youtubeUrl": "https://www.youtube.com/shorts/YP57eAXE5e8",
+    "publishAt": "2026-05-03T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-05-02",
+    "quizId": 203,
+    "title": "Quiz 203",
+    "image": "/quizzes/2026-05-02.png",
+    "hint": "기울어진 모양도 생각하자",
+    "answer": "ㅁ모양 5종류, 마름모모양 2종류, 기울어진 모양 4종류 총 11종류",
+    "youtubeUrl": "https://www.youtube.com/shorts/YRfzoJZKbh0",
+    "publishAt": "2026-05-02T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-05-01",
+    "quizId": 202,
+    "title": "Quiz 202",
+    "image": "/quizzes/2026-05-01.png",
+    "hint": "가비의 이를 이용해보자",
+    "answer": "4.7",
+    "youtubeUrl": "https://www.youtube.com/shorts/KQ9OqdVOXj0",
+    "publishAt": "2026-05-01T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-04-30",
+    "quizId": 201,
+    "title": "Quiz 201",
+    "image": "/quizzes/2026-04-30.png",
+    "hint": "덧셈과 단어 끝",
+    "answer": "R",
+    "youtubeUrl": "https://www.youtube.com/shorts/I_VD06_U018",
+    "publishAt": "2026-04-30T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-04-29",
+    "quizId": 200,
+    "title": "Quiz 200",
+    "image": "/quizzes/2026-04-29.png",
+    "hint": "시계",
+    "answer": "18",
+    "youtubeUrl": "https://www.youtube.com/shorts/Z2k97ULkyRs",
+    "publishAt": "2026-04-29T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-04-28",
+    "quizId": 199,
+    "title": "Quiz 199",
+    "image": "/quizzes/2026-04-28.png",
+    "hint": "조립제법",
+    "answer": "A=14, B=18",
+    "youtubeUrl": "https://www.youtube.com/shorts/Pf7xCN9-QHw",
+    "publishAt": "2026-04-28T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-04-27",
+    "quizId": 198,
+    "title": "Quiz 198",
+    "image": "/quizzes/2026-04-27.png",
+    "hint": "엘리베이터 숫자모양",
+    "answer": "9",
+    "youtubeUrl": "https://www.youtube.com/shorts/qL3oVexg1rk",
+    "publishAt": "2026-04-27T08:00:00+09:00",
+    "published": true
+  },
+  {
     "date": "2026-04-26",
     "quizId": 197,
     "title": "Quiz 197",
