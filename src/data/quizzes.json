@@ -1,5 +1,82 @@
 [
   {
+    "date": "2026-05-31",
+    "quizId": 232,
+    "title": "Quiz 232",
+    "image": "/quizzes/2026-05-31.png",
+    "hint": "사전식 배열",
+    "answer": "5",
+    "youtubeUrl": "https://www.youtube.com/shorts/dXKV0nvVziM",
+    "publishAt": "2026-05-31T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-05-30",
+    "quizId": 231,
+    "title": "Quiz 231",
+    "image": "/quizzes/2026-05-30.png",
+    "hint": "합",
+    "answer": "5",
+    "youtubeUrl": "https://www.youtube.com/shorts/N5hbe87rCyQ",
+    "publishAt": "2026-05-30T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-05-29",
+    "quizId": 230,
+    "title": "Quiz 230",
+    "image": "/quizzes/2026-05-29.png",
+    "hint": "1개만 거짓",
+    "answer": "2번의 골드바흐의 강한 추측은 아직 증명되지 않았습니다.",
+    "youtubeUrl": "https://www.youtube.com/shorts/u9RDw9Wl0ys",
+    "publishAt": "2026-05-29T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-05-28",
+    "quizId": 229,
+    "title": "Quiz 229",
+    "image": "/quizzes/2026-05-28.png",
+    "hint": "시간과 해",
+    "answer": "없다",
+    "youtubeUrl": "https://www.youtube.com/shorts/SRbjZjctIxA",
+    "publishAt": "2026-05-28T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-05-27",
+    "quizId": 228,
+    "title": "Quiz 228",
+    "image": "/quizzes/2026-05-27.png",
+    "hint": "시계",
+    "answer": "9",
+    "youtubeUrl": "https://www.youtube.com/shorts/5LXtvbZJHzU",
+    "publishAt": "2026-05-27T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-05-26",
+    "quizId": 227,
+    "title": "Quiz 227",
+    "image": "/quizzes/2026-05-26.png",
+    "hint": "지금이 중요합니다.",
+    "answer": "3등",
+    "youtubeUrl": "https://www.youtube.com/shorts/0ihe53qW-HY",
+    "publishAt": "2026-05-26T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-05-25",
+    "quizId": 226,
+    "title": "Quiz 226",
+    "image": "/quizzes/2026-05-25.png",
+    "hint": "세로 연산, 두번째줄은 제곱",
+    "answer": "16-5 = 11",
+    "youtubeUrl": "https://www.youtube.com/shorts/PfXRzSmD1Lg",
+    "publishAt": "2026-05-25T08:00:00+09:00",
+    "published": true
+  },
+  {
     "date": "2026-05-24",
     "quizId": 225,
     "title": "Quiz 225",
