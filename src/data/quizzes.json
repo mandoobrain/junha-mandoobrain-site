@@ -1,5 +1,82 @@
 [
   {
+    "date": "2026-06-07",
+    "quizId": 239,
+    "title": "Quiz 239",
+    "image": "/quizzes/2026-06-07.png",
+    "hint": "42사이",
+    "answer": "생길지",
+    "youtubeUrl": "https://www.youtube.com/shorts/76hQVpKkibQ",
+    "publishAt": "2026-06-07T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-06-06",
+    "quizId": 238,
+    "title": "Quiz 238",
+    "image": "/quizzes/2026-06-06.png",
+    "hint": "!!!!!!!",
+    "answer": "5를 5!으로 바꾸자",
+    "youtubeUrl": "https://www.youtube.com/shorts/HE2QeAWnU94",
+    "publishAt": "2026-06-06T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-06-05",
+    "quizId": 237,
+    "title": "Quiz 237",
+    "image": "/quizzes/2026-06-05.png",
+    "hint": "피보나치",
+    "answer": "34",
+    "youtubeUrl": "https://www.youtube.com/shorts/mXbH-TJYQyM",
+    "publishAt": "2026-06-05T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-06-04",
+    "quizId": 236,
+    "title": "Quiz 236",
+    "image": "/quizzes/2026-06-04.png",
+    "hint": "조합",
+    "answer": "9",
+    "youtubeUrl": "https://www.youtube.com/shorts/OX0mNUv6w5A",
+    "publishAt": "2026-06-04T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-06-03",
+    "quizId": 235,
+    "title": "Quiz 235",
+    "image": "/quizzes/2026-06-03.png",
+    "hint": "7의 배수",
+    "answer": "37",
+    "youtubeUrl": "https://www.youtube.com/shorts/ejDhpaFMUX0",
+    "publishAt": "2026-06-03T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-06-02",
+    "quizId": 234,
+    "title": "Quiz 234",
+    "image": "/quizzes/2026-06-02.png",
+    "hint": "27을 건드려 보자",
+    "answer": "27의 2를 7의 제곱으로 바꾼다.",
+    "youtubeUrl": "https://www.youtube.com/shorts/X8g-w8eu5_8",
+    "publishAt": "2026-06-02T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-06-01",
+    "quizId": 233,
+    "title": "Quiz 233",
+    "image": "/quizzes/2026-06-01.png",
+    "hint": "여러분의 창의적인 정답을 기다립니다.",
+    "answer": "창의적인 정답을 남겨주세요",
+    "youtubeUrl": "https://www.youtube.com/shorts/9vl8arVIQO0",
+    "publishAt": "2026-06-01T08:00:00+09:00",
+    "published": true
+  },
+  {
     "date": "2026-05-31",
     "quizId": 232,
     "title": "Quiz 232",
