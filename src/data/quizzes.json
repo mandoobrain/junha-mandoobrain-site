@@ -1,5 +1,82 @@
 [
   {
+    "date": "2026-06-21",
+    "quizId": 246,
+    "title": "Quiz 246",
+    "image": "/quizzes/2026-06-21.png",
+    "hint": "키패드",
+    "answer": "N",
+    "youtubeUrl": "https://www.youtube.com/shorts/ytW1tN4Jslk",
+    "publishAt": "2026-06-21T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-06-20",
+    "quizId": 245,
+    "title": "Quiz 245",
+    "image": "/quizzes/2026-06-20.png",
+    "hint": "미지수로 생각해보자",
+    "answer": "50",
+    "youtubeUrl": "https://www.youtube.com/shorts/jPiEAaXsYj0",
+    "publishAt": "2026-06-20T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-06-19",
+    "quizId": 244,
+    "title": "Quiz 244",
+    "image": "/quizzes/2026-06-19.png",
+    "hint": "3의 배수",
+    "answer": "33",
+    "youtubeUrl": "https://www.youtube.com/shorts/Koz8264PSQ0",
+    "publishAt": "2026-06-19T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-06-18",
+    "quizId": 243,
+    "title": "Quiz 243",
+    "image": "/quizzes/2026-06-18.png",
+    "hint": "숫자의 개수",
+    "answer": "11",
+    "youtubeUrl": "https://www.youtube.com/shorts/znp-f6AJuRw",
+    "publishAt": "2026-06-18T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-06-17",
+    "quizId": 242,
+    "title": "Quiz 242",
+    "image": "/quizzes/2026-06-17.png",
+    "hint": "중간 수는 3과 5의 평균",
+    "answer": "4",
+    "youtubeUrl": "https://www.youtube.com/shorts/0hRWZD-146Q",
+    "publishAt": "2026-06-17T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-06-16",
+    "quizId": 241,
+    "title": "Quiz 241",
+    "image": "/quizzes/2026-06-16.png",
+    "hint": "1.미적분1 2.확률과 통계 3. 공통수학1",
+    "answer": "롤의정리, 이항정리, 인수정리",
+    "youtubeUrl": "https://www.youtube.com/shorts/U1AgcEeDQKU",
+    "publishAt": "2026-06-16T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-06-15",
+    "quizId": 240,
+    "title": "Quiz 240",
+    "image": "/quizzes/2026-06-15.png",
+    "hint": "분수",
+    "answer": "1",
+    "youtubeUrl": "https://www.youtube.com/shorts/ZV0hjT_z43g",
+    "publishAt": "2026-06-15T08:00:00+09:00",
+    "published": true
+  },
+  {
     "date": "2026-06-07",
     "quizId": 239,
     "title": "Quiz 239",
