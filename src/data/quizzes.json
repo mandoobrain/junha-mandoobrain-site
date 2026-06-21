@@ -1,5 +1,82 @@
 [
   {
+    "date": "2026-06-28",
+    "quizId": 253,
+    "title": "Quiz 253",
+    "image": "/quizzes/2026-06-28.png",
+    "hint": "날짜",
+    "answer": "11",
+    "youtubeUrl": "https://www.youtube.com/shorts/BbKqK58ySl0",
+    "publishAt": "2026-06-28T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-06-27",
+    "quizId": 252,
+    "title": "Quiz 252",
+    "image": "/quizzes/2026-06-27.png",
+    "hint": "핸드폰",
+    "answer": "9",
+    "youtubeUrl": "https://www.youtube.com/shorts/MpDZ_NpPu1k",
+    "publishAt": "2026-06-27T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-06-26",
+    "quizId": 251,
+    "title": "Quiz 251",
+    "image": "/quizzes/2026-06-26.png",
+    "hint": "A가 B보다 크다",
+    "answer": "A=6, B=2",
+    "youtubeUrl": "https://www.youtube.com/shorts/vmDsHSGcPc0",
+    "publishAt": "2026-06-26T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-06-25",
+    "quizId": 250,
+    "title": "Quiz 250",
+    "image": "/quizzes/2026-06-25.png",
+    "hint": "절댓값",
+    "answer": "I2I-1 = 1",
+    "youtubeUrl": "https://www.youtube.com/shorts/SXXG9KQSXLk",
+    "publishAt": "2026-06-25T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-06-24",
+    "quizId": 249,
+    "title": "Quiz 249",
+    "image": "/quizzes/2026-06-24.png",
+    "hint": "1을 이동시키자",
+    "answer": "19의 1을 뺄셈과 합하여 덧셈으로 만들자!",
+    "youtubeUrl": "https://www.youtube.com/shorts/g8kRA-hmPuM",
+    "publishAt": "2026-06-24T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-06-23",
+    "quizId": 248,
+    "title": "Quiz 248",
+    "image": "/quizzes/2026-06-23.png",
+    "hint": "1부터 10까지 더하지 않았습니다.",
+    "answer": "100",
+    "youtubeUrl": "https://www.youtube.com/shorts/QuY-ebafpS8",
+    "publishAt": "2026-06-23T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-06-22",
+    "quizId": 247,
+    "title": "Quiz 247",
+    "image": "/quizzes/2026-06-22.png",
+    "hint": "수를 90도 회전해보자",
+    "answer": "흥부",
+    "youtubeUrl": "https://www.youtube.com/shorts/Yr89kmvJcMQ",
+    "publishAt": "2026-06-22T08:00:00+09:00",
+    "published": true
+  },
+  {
     "date": "2026-06-21",
     "quizId": 246,
     "title": "Quiz 246",
