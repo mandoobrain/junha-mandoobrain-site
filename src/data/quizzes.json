@@ -1,5 +1,82 @@
 [
   {
+    "date": "2026-07-05",
+    "quizId": 260,
+    "title": "Quiz 260",
+    "image": "/quizzes/2026-07-05.png",
+    "hint": "약수",
+    "answer": "51",
+    "youtubeUrl": "https://www.youtube.com/shorts/PoqNDJYOEps",
+    "publishAt": "2026-07-05T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-07-04",
+    "quizId": 259,
+    "title": "Quiz 259",
+    "image": "/quizzes/2026-07-04.png",
+    "hint": "x는 2의 거듭제곱 꼴이다",
+    "answer": "256",
+    "youtubeUrl": "https://www.youtube.com/shorts/RT0hedzUbR8",
+    "publishAt": "2026-07-04T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-07-03",
+    "quizId": 258,
+    "title": "Quiz 258",
+    "image": "/quizzes/2026-07-03.png",
+    "hint": "계산 결과가 3자리 수가 나왔다!",
+    "answer": "A=9, B=8",
+    "youtubeUrl": "https://www.youtube.com/shorts/pkXDEhijDpY",
+    "publishAt": "2026-07-03T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-07-02",
+    "quizId": 257,
+    "title": "Quiz 257",
+    "image": "/quizzes/2026-07-02.png",
+    "hint": "1102",
+    "answer": "천백이",
+    "youtubeUrl": "https://www.youtube.com/shorts/oK3pcK2Bp08",
+    "publishAt": "2026-07-02T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-07-01",
+    "quizId": 256,
+    "title": "Quiz 256",
+    "image": "/quizzes/2026-07-01.png",
+    "hint": "각 숫자에 1을 더하고 .......",
+    "answer": "각 숫자에 1을 더해 곱한 뒤 1 빼기 35",
+    "youtubeUrl": "https://www.youtube.com/shorts/FnipVvFf9DM",
+    "publishAt": "2026-07-01T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-06-30",
+    "quizId": 255,
+    "title": "Quiz 255",
+    "image": "/quizzes/2026-06-30.png",
+    "hint": "숫자야구",
+    "answer": "7142",
+    "youtubeUrl": "https://www.youtube.com/shorts/O3MUaJzy9bE",
+    "publishAt": "2026-06-30T08:00:00+09:00",
+    "published": true
+  },
+  {
+    "date": "2026-06-29",
+    "quizId": 254,
+    "title": "Quiz 254",
+    "image": "/quizzes/2026-06-29.png",
+    "hint": "국기의 무언가",
+    "answer": "1",
+    "youtubeUrl": "https://www.youtube.com/shorts/QBT2kSKH9vo",
+    "publishAt": "2026-06-29T08:00:00+09:00",
+    "published": true
+  },
+  {
     "date": "2026-06-28",
     "quizId": 253,
     "title": "Quiz 253",
